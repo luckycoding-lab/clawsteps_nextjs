@@ -1,36 +1,110 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+## Tech Stack
 
-## Getting Started
+| Layer | Technology | Purpose |
+|---|---|---|
+| **Framework** | **Next.js** (App Router, Server Actions) | Full-stack hybrid framework handling SSR, SSG, and secure server-side logic |
+| **Frontend Library** | **React.js** | Interactive component-driven UI architecture |
+| **Runtime Environment** | **Node.js** | Server-side execution engine powering Next.js server actions and API routes |
+| **Backend & Database** | **Appwrite Cloud** | Document database, secure API endpoints, and cloud storage for blog posts |
+| **Authentication** | **OAuth 2.0** / **NextAuth.js** (Google Provider) | Secure role-based identity authentication and admin authorization flows |
+| **Styling** | **Tailwind CSS** | Responsive utility-first dark theme design system |
+| **Language** | **TypeScript** | End-to-end type safety across UI components, actions, and API boundaries |
+| **Icons & Assets** | **Lucide React** | Lightweight, accessible vector iconography |
+| **Alerts & Messaging** | **Telegram Bot API** | Real-time push alerts for inquiries and new article publications |
+| **Hosting & Deployment** | **Vercel** | Edge Network hosting, automated CI/CD deployments, and SSL management |
+| **Domain & DNS** | **GoDaddy** | Apex `@` and `www` DNS management and routing |
 
-First, run the development server:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## ClawSteps - Premier Dog Walking & Pet Care Platform
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+> A modern, high-performance web platform built for **ClawSteps**, Delhi NCR's premier dog walking and pet care service. The application features a dynamic blog engine, Google OAuth admin portal, automated Telegram event notifications, SEO optimization, and structured service showcases.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Table of Contents
 
-## Learn More
+- [Overview](#overview)
+- [Tech Stack](#tech-stack)
+- [Key Features](#key-features)
+- [Project Architecture](#project-architecture)
+- [.env.sample](#envsample)
+- [Getting Started](#getting-started)
+- [Authentication & Admin Flow](#authentication--admin-flow)
+- [Blog Publishing Pipeline](#blog-publishing-pipeline)
+- [Telegram Bot Integration](#telegram-bot-integration)
+- [SEO & Metadata](#seo--metadata)
+- [Deployment & Custom Domain](#deployment--custom-domain)
+- [License](#license)
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Overview
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+ClawSteps delivers professional dog walking, brain stimulation routines, and comprehensive pet care across Delhi NCR. This Next.js application serves as both the consumer-facing portal and a full publishing platform for pet health and behavior guides.
 
-## Deploy on Vercel
+- **Production URL:** [https://clawsteps.com](https://clawsteps.com)
+- **Primary Service Area:** Delhi NCR, India
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Tech Stack
+
+| Layer | Technology | Purpose |
+|---|---|---|
+| **Framework** | Next.js (App Router, Server Actions) | Full-stack React framework, SSR/SSG & backend actions |
+| **Language** | TypeScript | Type-safe development across UI & API boundaries |
+| **Styling** | Tailwind CSS | Utility-first responsive dark theme design system |
+| **Icons** | Lucide React | Clean, accessible vector UI icons |
+| **Database / Backend** | Appwrite Cloud | Document database for blog storage and assets |
+| **Authentication** | NextAuth.js (Google OAuth 2.0) | Secure admin identity and role-based sessions |
+| **Notifications** | Telegram Bot API | Instant alerts for new lead submissions and post publications |
+| **Hosting & SSL** | Vercel Edge Network | Global CDN delivery, auto-deployments, and SSL certs |
+| **DNS Provider** | GoDaddy | Root A and CNAME record management |
+
+---
+
+## Key Features
+
+- **Dynamic Blog Engine:** Fast article delivery powered by Appwrite with dynamic reading time calculation and URL slugification.
+- **Google OAuth Admin Flow:** Restricted publishing dashboard (`/admin/new-post`) accessible exclusively by authorized admin accounts.
+- **Telegram Notification Bot:** Automated real-time alerts dispatched to admin chat groups whenever leads interact with contact forms or when new articles publish.
+- **Incremental Static Regeneration (ISR):** Blog feeds update smoothly (`revalidate = 60`) without requiring complete project rebuilds.
+- **SEO & Search Indexing:** Pre-configured `sitemap.ts` and `robots.ts` ensuring clean Googlebot crawls across all active routes.
+- **Responsive Dark Theme UI:** Designed for zero-lag responsiveness across mobile, tablet, and widescreen desktop displays.
+- **Direct WhatsApp Chat Integration:** One-click WhatsApp action links for direct bookings and customer inquiries.
+
+---
+
+## Project Architecture
+
+```text
+clawsteps/
+├── app/
+│   ├── aboutus/                  # About page (Company mission & handlers)
+│   ├── actions/                  # Server actions (Appwrite DB CRUD & Telegram alerts)
+│   ├── admin/
+│   │   └── new-post/
+│   │       └── page.tsx          # Protected admin blog creation form
+│   ├── api/
+│   │   └── auth/
+│   │       └── [...nextauth]/
+│   │           └── route.ts      # NextAuth Google provider & session handler
+│   ├── blog/
+│   │   ├── [slug]/
+│   │   │   └── page.tsx          # Dynamic blog reader page
+│   │   └── page.tsx              # Main blog feed & index
+│   ├── comingsoon/               # Holding page for unreleased features
+│   ├── privacypolicy/            # Privacy Policy documentation
+│   ├── services/                 # Walking routines & brain games breakdown
+│   ├── term-and-condition/       # Terms & Conditions documentation
+│   ├── globals.css               # Global stylesheet & design tokens
+│   ├── layout.tsx                # Root layout (Navbar, Providers, Footer)
+│   ├── not-found.tsx             # Custom 404 page
+│   ├── page.tsx                  # Landing / Home page
+│   ├── robots.ts                 # Dynamic robots.txt generator
+│   └── sitemap.ts                # Dynamic XML sitemap generator
+├── components/                   # Modular UI components (Navbar, Footer, Forms)
+├── lib/                          # Utility modules, Appwrite client, blog helpers
+├── public/                       # Static brand assets, logos, and icons
+├── .env.sample                   # Environment variable template
+└── package.json                  # Dependencies and build scripts
