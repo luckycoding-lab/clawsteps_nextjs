@@ -54,21 +54,57 @@ export const metadata: Metadata = {
 
 const jsonLd = {
   "@context": "https://schema.org",
-  "@type": "LocalBusiness",
+  "@type": ["LocalBusiness", "PetService"],
+  "@id": "https://clawsteps.com/#business",
   name: "ClawSteps",
-  image: "https://clawsteps.com/assets/Logo.png",
-  "@id": "https://clawsteps.com",
+  alternateName: "ClawSteps Dog Walking",
+  description: "Professional dog walking and pet care services in Delhi NCR. Certified handlers, GPS tracking, and daily updates.",
   url: "https://clawsteps.com",
+  logo: "https://clawsteps.com/assets/Logo.png",
+  image: "https://clawsteps.com/assets/Logo.png",
   telephone: "+91 7982520153",
+  priceRange: "₹₹",
+  currenciesAccepted: "INR",
+  paymentAccepted: "Cash, UPI, Credit Card",
   address: {
     "@type": "PostalAddress",
     streetAddress: "Dwarka Mor",
-    addressLocality: "Delhi",
-    addressRegion: "NCR",
+    addressLocality: "New Delhi",
+    addressRegion: "Delhi NCR",
+    postalCode: "110059",
     addressCountry: "IN",
   },
-  description: "Professional dog walking and pet care services in Delhi NCR.",
-  openingHours: "Mo,Tu,We,Th,Fr,Sa,Su 06:00-21:00",
+  geo: {
+    "@type": "GeoCoordinates",
+    latitude: 28.6186, // Dwarka Mor coordinates
+    longitude: 77.0322,
+  },
+  areaServed: [
+    { "@type": "City", name: "Delhi" },
+    { "@type": "City", name: "Noida" },
+    { "@type": "City", name: "Gurgaon" },
+  ],
+  openingHoursSpecification: [
+    {
+      "@type": "OpeningHoursSpecification",
+      dayOfWeek: [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday",
+        "Sunday",
+      ],
+      opens: "06:00",
+      closes: "21:00",
+    },
+  ],
+  sameAs: [
+    "https://www.instagram.com/clawsteps/",
+    "https://www.facebook.com/profile.php?id=61581390965748",
+    "https://x.com/clawsteps",
+  ],
 };
 
 export default function RootLayout({
