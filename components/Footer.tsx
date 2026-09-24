@@ -4,7 +4,7 @@ import { MessageCircle, MapPin } from "lucide-react";
 
 export default function Footer() {
   return (
-    <footer className="bg-zinc-950 border-t border-zinc-800 text-zinc-400 text-sm">
+    <footer className="bg-zinc-950 border-t border-zinc-800 text-zinc-300 text-sm">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 grid grid-cols-1 md:grid-cols-4 gap-10">
         <div className="space-y-4">
           <Image
@@ -12,9 +12,10 @@ export default function Footer() {
             alt="ClawSteps Logo"
             width={130}
             height={36}
+            priority={true}
             className="h-auto w-auto object-contain"
           />
-          <p className="text-xs leading-relaxed text-zinc-400">
+          <p className="text-xs leading-relaxed text-zinc-300">
             Ensuring your pets get regular exercise and structured care. Delhi&apos;s premier dog walking community with verified handlers.
           </p>
           <div className="flex space-x-3 pt-2">
@@ -44,8 +45,8 @@ export default function Footer() {
 
         <div>
           <h4 className="text-white font-semibold text-sm mb-4">Get in Touch</h4>
-          <p className="text-xs mb-2"><strong className="text-zinc-200">Call:</strong> +91 79825 20153</p>
-          <p className="text-xs mb-4"><strong className="text-zinc-200">Email:</strong> contact@clawsteps.com</p>
+          <p className="text-xs mb-2"><strong className="text-zinc-300">Call:</strong> +91 79825 20153</p>
+          <p className="text-xs mb-4"><strong className="text-zinc-300">Email:</strong> contact@clawsteps.com</p>
           <a
             href="https://wa.me/917982520153"
             target="_blank"

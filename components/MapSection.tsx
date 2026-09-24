@@ -20,7 +20,7 @@ export default function MapSection() {
             <h3 className="text-xl font-bold text-white flex items-center gap-2">
               Claw Steps 🐾
             </h3>
-            <p className="text-zinc-400 text-sm mt-1">Professional Dog Walking Service</p>
+            <p className="text-zinc-300 text-sm mt-1">Professional Dog Walking Service</p>
             <span className="text-xs text-amber-500 font-semibold">Delhi NCR Operations</span>
           </div>
 
@@ -44,7 +44,7 @@ export default function MapSection() {
               href="https://maps.app.goo.gl/22DfgQhW3E3BpL9r8"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 bg-zinc-800 hover:bg-zinc-700 text-white text-sm font-semibold px-5 py-2.5 rounded-xl border border-zinc-700 transition"
+              className="inline-flex items-center gap-2 bg-zinc-800 hover:bg-zinc-700 text-white text-sm font-semibold px-5 py-2.5 rounded-xl border border-zinc-800 transition"
             >
               <MapPin className="w-4 h-4 text-amber-500" />
               Get Directions

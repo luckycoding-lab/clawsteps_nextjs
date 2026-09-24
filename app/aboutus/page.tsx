@@ -80,7 +80,7 @@ const VALUES_GRID = [
     highlight: true,
   },
   {
-    icon: <Target className="w-6 h-6 text-zinc-400" />,
+    icon: <Target className="w-6 h-6 text-zinc-300" />,
     title: "Our Mission",
     description:
       "Providing genuine convenience for humans and absolute dedicated care for dogs.",
@@ -90,7 +90,7 @@ const VALUES_GRID = [
 
 export default function AboutUsPage() {
   return (
-    <div className="min-h-screen bg-zinc-950 text-zinc-100 py-16 px-4 sm:px-6 lg:px-8">
+    <div className="min-h-screen bg-zinc-950 text-zinc-300 py-16 px-4 sm:px-6 lg:px-8">
       {/* Schema Injection */}
       <script
         type="application/ld+json"
@@ -108,7 +108,7 @@ export default function AboutUsPage() {
             <span className="font-serif italic text-amber-500">Delhi</span> for
             every paw.
           </h1>
-          <p className="text-sm sm:text-base text-zinc-400 leading-relaxed">
+          <p className="text-sm sm:text-base text-zinc-300 leading-relaxed">
             Delhi&apos;s most trusted companion for professional pet care.
           </p>
         </section>
@@ -128,7 +128,7 @@ export default function AboutUsPage() {
                 Delhi NCR by providing more than just a walk—we provide a genuine
                 connection.
               </p>
-              <p className="text-zinc-400">
+              <p className="text-zinc-300">
                 Our mission is to bridge the gap between your busy city schedule
                 and your dog&apos;s need for movement and companionship. Clawsteps
                 serves as an extension of your family, ensuring high-quality
@@ -170,7 +170,7 @@ export default function AboutUsPage() {
             <h2 className="text-2xl sm:text-3xl font-bold text-white">
               Spreading Happiness
             </h2>
-            <p className="text-xs sm:text-sm text-zinc-400">
+            <p className="text-xs sm:text-sm text-zinc-300">
               We create moments of joy and health that ripple through the community.
             </p>
           </div>
@@ -182,7 +182,7 @@ export default function AboutUsPage() {
                 className={`p-6 sm:p-8 rounded-2xl border transition-colors flex flex-col justify-between ${
                   item.highlight
                     ? "bg-linear-to-br from-amber-500/10 to-zinc-900 border-amber-500/40"
-                    : "bg-zinc-900/60 border-zinc-800/80 hover:border-zinc-700"
+                    : "bg-zinc-900/60 border-zinc-800/80 hover:border-zinc-800"
                 }`}
               >
                 <div>
@@ -192,7 +192,7 @@ export default function AboutUsPage() {
                   <h3 className="text-lg font-bold text-white mb-2">
                     {item.title}
                   </h3>
-                  <p className="text-xs sm:text-sm text-zinc-400 leading-relaxed">
+                  <p className="text-xs sm:text-sm text-zinc-300 leading-relaxed">
                     {item.description}
                   </p>
                 </div>
@@ -206,7 +206,7 @@ export default function AboutUsPage() {
           <h2 className="text-2xl sm:text-4xl font-bold text-white tracking-tight">
             Ready to start?
           </h2>
-          <p className="text-sm sm:text-base text-zinc-400 max-w-md mx-auto">
+          <p className="text-sm sm:text-base text-zinc-300 max-w-md mx-auto">
             Book a free meet-and-greet today and let your pet experience structured, loving walks.
           </p>
           <div className="pt-2">

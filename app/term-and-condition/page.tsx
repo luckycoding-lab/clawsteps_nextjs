@@ -21,7 +21,7 @@ export const metadata: Metadata = {
 
 export default function TermsAndConditionsPage() {
   return (
-    <div className="relative min-h-screen bg-zinc-950 text-zinc-100 py-16 px-4 sm:px-6 lg:px-8">
+    <div className="relative min-h-screen bg-zinc-950 text-zinc-300 py-16 px-4 sm:px-6 lg:px-8">
       <div className="max-w-4xl mx-auto space-y-12">
         {/* Header Section */}
         <div className="text-center space-y-3 border-b border-zinc-800 pb-8">
@@ -31,7 +31,7 @@ export default function TermsAndConditionsPage() {
           <h1 className="text-3xl sm:text-5xl font-bold tracking-tight text-white">
             Terms & Conditions
           </h1>
-          <p className="text-xs sm:text-sm text-zinc-400">
+          <p className="text-xs sm:text-sm text-zinc-300">
             Last Updated: January 2026
           </p>
         </div>
@@ -56,7 +56,7 @@ export default function TermsAndConditionsPage() {
             </h2>
             <div className="space-y-4 text-sm text-zinc-300 leading-relaxed pl-1 sm:pl-7">
               <div>
-                <h3 className="font-semibold text-zinc-100 mb-1">
+                <h3 className="font-semibold text-zinc-300 mb-1">
                   1.1 Acceptance of Terms
                 </h3>
                 <p>
@@ -68,7 +68,7 @@ export default function TermsAndConditionsPage() {
               </div>
 
               <div>
-                <h3 className="font-semibold text-zinc-100 mb-1">
+                <h3 className="font-semibold text-zinc-300 mb-1">
                   1.2 Scope of Service
                 </h3>
                 <p>
@@ -79,23 +79,23 @@ export default function TermsAndConditionsPage() {
               </div>
 
               <div>
-                <h3 className="font-semibold text-zinc-100 mb-1">
+                <h3 className="font-semibold text-zinc-300 mb-1">
                   1.3 Client Responsibilities
                 </h3>
-                <ul className="list-disc list-inside space-y-1.5 text-zinc-400">
+                <ul className="list-disc list-inside space-y-1.5 text-zinc-300">
                   <li>
-                    <strong className="text-zinc-200">Information Accuracy:</strong>{" "}
+                    <strong className="text-zinc-300">Information Accuracy:</strong>{" "}
                     You must provide complete information about your dog&apos;s
                     health conditions, behavioral issues, allergies, and special
                     needs.
                   </li>
                   <li>
-                    <strong className="text-zinc-200">Vaccinations:</strong> All
+                    <strong className="text-zinc-300">Vaccinations:</strong> All
                     dogs must be up-to-date on vaccinations and flea/tick
                     prevention. Proof may be requested.
                   </li>
                   <li>
-                    <strong className="text-zinc-200">Supplies:</strong> Clients
+                    <strong className="text-zinc-300">Supplies:</strong> Clients
                     must provide necessary supplies (leashes, harnesses, food,
                     and waste bags).
                   </li>
@@ -112,7 +112,7 @@ export default function TermsAndConditionsPage() {
             </h2>
             <div className="space-y-4 text-sm text-zinc-300 leading-relaxed pl-1 sm:pl-7">
               <div>
-                <h3 className="font-semibold text-zinc-100 mb-1">
+                <h3 className="font-semibold text-zinc-300 mb-1">
                   2.1 Booking Confirmation
                 </h3>
                 <p>
@@ -123,7 +123,7 @@ export default function TermsAndConditionsPage() {
               </div>
 
               <div>
-                <h3 className="font-semibold text-zinc-100 mb-1">
+                <h3 className="font-semibold text-zinc-300 mb-1">
                   2.2 Service Duration
                 </h3>
                 <p>
@@ -133,19 +133,19 @@ export default function TermsAndConditionsPage() {
               </div>
 
               <div>
-                <h3 className="font-semibold text-zinc-100 mb-1">
+                <h3 className="font-semibold text-zinc-300 mb-1">
                   2.3 Meet-and-Greet
                 </h3>
                 <p>
                   A complimentary{" "}
-                  <strong className="text-zinc-100">&ldquo;Meet-and-Greet&rdquo;</strong>{" "}
+                  <strong className="text-zinc-300">&ldquo;Meet-and-Greet&rdquo;</strong>{" "}
                   session is mandatory for all new clients to ensure compatibility
                   between the walker and your pet.
                 </p>
               </div>
 
               <div>
-                <h3 className="font-semibold text-zinc-100 mb-1">
+                <h3 className="font-semibold text-zinc-300 mb-1">
                   2.4 Off-Leash Walking Policy
                 </h3>
                 <p>
@@ -165,7 +165,7 @@ export default function TermsAndConditionsPage() {
             </h2>
             <div className="space-y-4 text-sm text-zinc-300 leading-relaxed pl-1 sm:pl-7">
               <div>
-                <h3 className="font-semibold text-zinc-100 mb-1">
+                <h3 className="font-semibold text-zinc-300 mb-1">
                   3.1 Payment Policy
                 </h3>
                 <p>
@@ -176,20 +176,20 @@ export default function TermsAndConditionsPage() {
               </div>
 
               <div>
-                <h3 className="font-semibold text-zinc-100 mb-1">
+                <h3 className="font-semibold text-zinc-300 mb-1">
                   3.2 Cancellation Fees
                 </h3>
-                <ul className="list-disc list-inside space-y-1.5 text-zinc-400">
+                <ul className="list-disc list-inside space-y-1.5 text-zinc-300">
                   <li>
-                    <strong className="text-zinc-200">&gt; 24 Hours Notice:</strong>{" "}
+                    <strong className="text-zinc-300">&gt; 24 Hours Notice:</strong>{" "}
                     Full refund or credit for future service.
                   </li>
                   <li>
-                    <strong className="text-zinc-200">&lt; 24 Hours Notice:</strong>{" "}
+                    <strong className="text-zinc-300">&lt; 24 Hours Notice:</strong>{" "}
                     No refund will be issued.
                   </li>
                   <li>
-                    <strong className="text-zinc-200">No-Show/No Access:</strong> If
+                    <strong className="text-zinc-300">No-Show/No Access:</strong> If
                     our walker cannot access the premises, the full fee applies.
                   </li>
                 </ul>
@@ -205,18 +205,18 @@ export default function TermsAndConditionsPage() {
             </h2>
             <div className="space-y-3 text-sm text-zinc-300 leading-relaxed pl-1 sm:pl-7">
               <p>
-                <strong className="text-zinc-100">4.1 Safety:</strong> While we
+                <strong className="text-zinc-300">4.1 Safety:</strong> While we
                 take every precaution, Claw Steps is not liable for incidents
                 caused by undisclosed health or aggression issues.
               </p>
               <p>
-                <strong className="text-zinc-100">4.2 Medical Emergencies:</strong>{" "}
+                <strong className="text-zinc-300">4.2 Medical Emergencies:</strong>{" "}
                 If we cannot reach you during an emergency, we reserve the right
                 to transport your pet to a veterinarian. You are responsible for
                 all associated expenses.
               </p>
               <p>
-                <strong className="text-zinc-100">4.3 Extreme Weather:</strong>{" "}
+                <strong className="text-zinc-300">4.3 Extreme Weather:</strong>{" "}
                 For the safety of the dogs, walks may be shortened during extreme
                 heatwaves or storms. Fees remain unchanged as care is still
                 provided.
@@ -232,7 +232,7 @@ export default function TermsAndConditionsPage() {
                 5. Liability and Indemnification
               </h2>
               <p className="text-sm text-zinc-300 leading-relaxed pl-1 sm:pl-7">
-                <strong className="text-zinc-100">5.1 Limited Liability:</strong>{" "}
+                <strong className="text-zinc-300">5.1 Limited Liability:</strong>{" "}
                 Claw Steps is not liable for loss, injury, or damage unless
                 caused by gross negligence. Owners are liable for expenses if
                 their dog bites or causes damage.
@@ -245,7 +245,7 @@ export default function TermsAndConditionsPage() {
                 6. Privacy Policy
               </h2>
               <p className="text-sm text-zinc-300 leading-relaxed pl-1 sm:pl-7">
-                <strong className="text-zinc-100">6.1 Confidentiality:</strong>{" "}
+                <strong className="text-zinc-300">6.1 Confidentiality:</strong>{" "}
                 Claw Steps respects your privacy. Your personal information and
                 home access details will never be shared with third parties
                 unless required by law or in a medical emergency.

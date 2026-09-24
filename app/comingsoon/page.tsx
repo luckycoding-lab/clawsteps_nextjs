@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 
 export default function ComingSoonPage() {
   return (
-    <div className="relative min-h-[85vh] flex items-center justify-center bg-zinc-950 text-zinc-100 px-4 py-16 overflow-hidden">
+    <div className="relative min-h-[85vh] flex items-center justify-center bg-zinc-950 text-zinc-300 px-4 py-16 overflow-hidden">
       {/* Decorative Background Paws */}
       <div className="pointer-events-none select-none absolute inset-0 overflow-hidden">
         <span
@@ -61,7 +61,7 @@ export default function ComingSoonPage() {
         </h1>
 
         {/* Description */}
-        <div className="space-y-3 text-sm text-zinc-400 leading-relaxed">
+        <div className="space-y-3 text-sm text-zinc-300 leading-relaxed">
           <p>
             This link is currently being sniffed out and optimized by our team.
             We&apos;re busy building something amazing for the Delhi pet

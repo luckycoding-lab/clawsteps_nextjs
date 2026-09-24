@@ -38,7 +38,7 @@ export const metadata: Metadata = {
       "Safe, reliable, and professional dog walking services across Delhi NCR. Choose from multiple walk durations.",
     images: [
       {
-        url: "https://clawsteps.com/images/og-image.jpg",
+        url: "https://clawsteps.com/assets/clawstepWebsite.png",
         width: 1200,
         height: 630,
         alt: "ClawSteps Dog Walking",
@@ -116,7 +116,7 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <body
         suppressHydrationWarning={true}
-        className={`${inter.className} min-h-screen flex flex-col bg-zinc-950 text-zinc-100`}
+        className={`${inter.className} min-h-screen flex flex-col bg-zinc-950 text-zinc-300`}
       >
         {/* SEO Structured Data */}
         <script

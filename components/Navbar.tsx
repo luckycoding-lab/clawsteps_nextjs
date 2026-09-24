@@ -24,7 +24,7 @@ export default function NavbarGlass() {
             alt="clawsteps_logo"
             width={130}
             height={32}
-            priority
+            priority={true}
             style={{ width: "auto" }}
             className="h-8 w-auto object-contain"
           />
@@ -37,7 +37,7 @@ export default function NavbarGlass() {
               <Link
                 key={item.href}
                 href={item.href}
-                className="text-sm font-medium text-zinc-400 hover:text-white hover:bg-zinc-800/80
+                className="text-sm font-medium text-zinc-300 hover:text-white hover:bg-zinc-800/80
                            px-4 py-1.5 rounded-full transition-all duration-200 whitespace-nowrap"
               >
                 {item.label}
@@ -78,7 +78,7 @@ export default function NavbarGlass() {
             <summary
               aria-label="Menu"
               className="list-none cursor-pointer p-2.5 rounded-full bg-zinc-900
-                         border border-zinc-800 text-zinc-100 flex items-center
+                         border border-zinc-800 text-zinc-300 flex items-center
                          justify-center select-none touch-manipulation
                          [&::-webkit-details-marker]:hidden active:scale-95"
             >
@@ -100,7 +100,7 @@ export default function NavbarGlass() {
                                    hover:bg-zinc-900/50 transition-all group/link"
                       >
                         <span>{item.label}</span>
-                        <ChevronRight className="w-4 h-4 text-zinc-600 group-hover/link:text-amber-400
+                        <ChevronRight className="w-4 h-4 text-zinc-300 group-hover/link:text-amber-400
                                                   group-hover/link:translate-x-1 transition-all" />
                       </Link>
                     </li>

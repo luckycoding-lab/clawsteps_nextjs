@@ -62,7 +62,7 @@ export default function PrecisionChronicles() {
           Precision Care in{" "}
           <span className="font-serif italic text-amber-500">Every Step.</span>
         </h2>
-        <p className="mt-4 text-zinc-400 text-sm sm:text-base leading-relaxed">
+        <p className="mt-4 text-zinc-300 text-sm sm:text-base leading-relaxed">
           Watch how our certified walkers manage high-energy breeds and maintain
           safety protocols across Delhi&apos;s busy streets.
         </p>
@@ -97,7 +97,7 @@ export default function PrecisionChronicles() {
               <h3 className="text-lg font-bold text-white mb-2">
                 Dog Name: {item.dogName}
               </h3>
-              <p className="text-xs text-zinc-400 leading-relaxed italic">
+              <p className="text-xs text-zinc-300 leading-relaxed italic">
                 &ldquo;{item.quote}&rdquo;
               </p>
             </div>

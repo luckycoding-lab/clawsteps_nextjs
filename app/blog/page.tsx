@@ -5,8 +5,20 @@ import { getAllPosts, calculateReadingTime } from '@/lib/blog';
 export const revalidate = 60;
 
 export const metadata = {
-  title: 'Pet Care & Dog Walking Blog | ClawSteps',
-  description: 'Expert tips on dog health, training, and walking routines in Delhi NCR.',
+ title: "Pet Care & Dog Walking Blog | ClawSteps",
+  description: "Expert tips on dog health, training, and walking routines in Delhi NCR.",
+  openGraph: {
+    title: "ClawSteps Insights - Dog Care & Walking Tips",
+    description: "Practical advice by professional walkers for pet parents in Delhi NCR.",
+    url: "https://clawsteps.com/blog",
+    images: [
+      {
+        url: "https://clawsteps.com/assets/clawstepWebsite.png",
+        width: 1200,
+        height: 630,
+      },
+    ],
+  },
 };
 
 export default async function BlogListingPage() {

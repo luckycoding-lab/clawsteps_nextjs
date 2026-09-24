@@ -10,7 +10,7 @@ export default function CarePackages() {
         <h2 className="text-3xl sm:text-5xl font-bold tracking-tight text-white">
           The <span className="font-serif italic text-amber-500">Care</span> Packages
         </h2>
-        <p className="mt-4 text-zinc-400 text-sm sm:text-base">
+        <p className="mt-4 text-zinc-300 text-sm sm:text-base">
           Premium walking experiences structured specifically around your dog&apos;s energy levels.
         </p>
       </div>
@@ -29,7 +29,7 @@ export default function CarePackages() {
             </div>
             <h3 className="text-2xl font-bold text-white mb-2">Weekly Play Pack</h3>
             <p className="text-amber-400 font-semibold mb-3">30 min / 6 walks</p>
-            <p className="text-zinc-400 text-sm leading-relaxed mb-6">
+            <p className="text-zinc-300 text-sm leading-relaxed mb-6">
               Our most popular routine. Consistent engagement to keep your dog physically active, calm, and fulfilled while you manage work.
             </p>
             <ul className="space-y-2 text-sm text-zinc-300">
@@ -62,7 +62,7 @@ export default function CarePackages() {
             </div>
             <h3 className="text-xl font-bold text-white mb-1">Quick Refresh</h3>
             <p className="text-amber-500 font-semibold text-sm mb-3">20 min Session</p>
-            <p className="text-zinc-400 text-sm leading-relaxed">
+            <p className="text-zinc-300 text-sm leading-relaxed">
               Designed for elderly dogs, puppies, or quick midday relief walks to keep routine intact.
             </p>
           </div>
@@ -82,7 +82,7 @@ export default function CarePackages() {
             </div>
             <h3 className="text-xl font-bold text-white mb-1">Long Stroll</h3>
             <p className="text-amber-500 font-semibold text-sm mb-3">40 min Session</p>
-            <p className="text-zinc-400 text-sm leading-relaxed">
+            <p className="text-zinc-300 text-sm leading-relaxed">
               Deep aerobic exercise session tailored to burn off energy for high-stamina adult breeds.
             </p>
           </div>
@@ -101,7 +101,7 @@ export default function CarePackages() {
           </div>
           <div>
             <h4 className="text-lg font-bold text-white">NCR Coverage Area</h4>
-            <p className="text-zinc-400 text-sm">
+            <p className="text-zinc-300 text-sm">
               Active in South Delhi, Dwarka, Noida, and Gurgaon with local vetted specialists.
             </p>
           </div>
@@ -118,7 +118,7 @@ export default function CarePackages() {
         ].map((stat, i) => (
           <div key={i} className="bg-zinc-900/60 border border-zinc-800 p-6 rounded-xl text-center">
             <div className="text-3xl font-extrabold text-amber-500 mb-1">{stat.value}</div>
-            <div className="text-xs text-zinc-400 font-medium">{stat.label}</div>
+            <div className="text-xs text-zinc-300 font-medium">{stat.label}</div>
           </div>
         ))}
       </div>

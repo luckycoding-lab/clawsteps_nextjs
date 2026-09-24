@@ -38,7 +38,7 @@ export default function CuriosityFaq() {
           <span className="font-serif italic text-amber-500">meets</span>{" "}
           transparency.
         </h2>
-        <p className="mt-4 text-zinc-400 text-sm sm:text-base leading-relaxed">
+        <p className="mt-4 text-zinc-300 text-sm sm:text-base leading-relaxed">
           We believe in building trust through every detail. If you have more
           questions, our pack is always a message away.
         </p>
@@ -49,7 +49,7 @@ export default function CuriosityFaq() {
         {FAQS.map((faq, index) => (
           <div
             key={index}
-            className="bg-zinc-900/60 border border-zinc-800 rounded-2xl p-6 sm:p-8 hover:border-zinc-700 transition-colors"
+            className="bg-zinc-900/60 border border-zinc-800 rounded-2xl p-6 sm:p-8 hover:border-zinc-800 transition-colors"
           >
             <span className="text-xs font-semibold uppercase tracking-wider text-amber-500">
               {faq.label}
@@ -57,7 +57,7 @@ export default function CuriosityFaq() {
             <h3 className="text-lg font-bold text-white mt-2 mb-3">
               {faq.question}
             </h3>
-            <p className="text-zinc-400 text-sm leading-relaxed">
+            <p className="text-zinc-300 text-sm leading-relaxed">
               {faq.answer}
             </p>
           </div>

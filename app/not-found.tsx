@@ -3,7 +3,7 @@ import { Dog, Wrench, ArrowLeft } from "lucide-react";
 
 export default function NotFound() {
   return (
-    <div className="relative min-h-[85vh] flex items-center justify-center bg-zinc-950 text-zinc-100 px-4 py-16 overflow-hidden">
+    <div className="relative min-h-[85vh] flex items-center justify-center bg-zinc-950 text-zinc-300 px-4 py-16 overflow-hidden">
       {/* Decorative Background Paws */}
       <div className="pointer-events-none select-none absolute inset-0 overflow-hidden">
         <span
@@ -51,7 +51,7 @@ export default function NotFound() {
         </h1>
 
         {/* Description */}
-        <div className="space-y-3 text-sm text-zinc-400 leading-relaxed">
+        <div className="space-y-3 text-sm text-zinc-300 leading-relaxed">
           <p>
             The link you followed isn&apos;t ready yet or is currently being
             sniffed out by our team.

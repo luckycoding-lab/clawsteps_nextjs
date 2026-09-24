@@ -50,7 +50,7 @@ const TLDR_POINTS = [
 
 export default function PrivacyPolicyPage() {
   return (
-    <div className="min-h-screen bg-zinc-950 text-zinc-100 py-16 px-4 sm:px-6 lg:px-8">
+    <div className="min-h-screen bg-zinc-950 text-zinc-300 py-16 px-4 sm:px-6 lg:px-8">
       <div className="max-w-4xl mx-auto space-y-16">
         {/* Hero Header */}
         <div className="text-center space-y-4 border-b border-zinc-800 pb-10">
@@ -74,7 +74,7 @@ export default function PrivacyPolicyPage() {
             </h1>
           </div>
 
-          <p className="max-w-md mx-auto text-sm sm:text-base text-zinc-400 font-medium leading-relaxed">
+          <p className="max-w-md mx-auto text-sm sm:text-base text-zinc-300 font-medium leading-relaxed">
             We treat your data like we treat your dogs—with total care.
           </p>
         </div>
@@ -115,7 +115,7 @@ export default function PrivacyPolicyPage() {
               <strong className="text-xs font-semibold uppercase tracking-wider text-amber-400 flex items-center gap-1.5">
                 <HeartHandshake className="w-4 h-4" /> Pet Specifics
               </strong>
-              <p className="text-xs sm:text-sm text-zinc-400 leading-relaxed">
+              <p className="text-xs sm:text-sm text-zinc-300 leading-relaxed">
                 We store details about your pup’s health, dietary needs,
                 temperament, and emergency vet contacts to ensure their safety.
               </p>
@@ -138,7 +138,7 @@ export default function PrivacyPolicyPage() {
                 provide you with the live walk route. This data collection stops
                 the moment the session is marked as &ldquo;Completed.&rdquo;
               </p>
-              <p className="text-zinc-400">
+              <p className="text-zinc-300">
                 History of these routes is saved in your account so you can
                 track your pet&apos;s exercise progress over time.
               </p>
@@ -202,7 +202,7 @@ export default function PrivacyPolicyPage() {
             <ShieldCheck className="w-7 h-7" />
           </div>
           <h3 className="text-xl font-bold text-white">Questions?</h3>
-          <p className="text-xs sm:text-sm text-zinc-400">
+          <p className="text-xs sm:text-sm text-zinc-300">
             Text our privacy lead directly at
           </p>
           <div>

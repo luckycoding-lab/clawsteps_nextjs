@@ -40,6 +40,7 @@ export default async function FeaturedBlogs() {
                   src={post.coverImage}
                   alt={post.title}
                   fill
+                  priority={true}
                   sizes="(max-width: 768px) 100vw, 33vw"
                   className="object-cover group-hover:scale-105 transition duration-300"
                 />

@@ -45,7 +45,7 @@ export default function Hero() {
           </Link>
           <Link
             href="/about"
-            className="border border-zinc-700 hover:border-zinc-500 text-zinc-200 font-medium px-6 py-3 rounded-xl transition"
+            className="border border-zinc-800 hover:border-zinc-500 text-zinc-300 font-medium px-6 py-3 rounded-xl transition"
           >
             About Us
           </Link>
@@ -65,10 +65,10 @@ export default function Hero() {
               </div>
               <div className="text-left overflow-hidden">
                 <div className="flex items-center justify-between gap-2">
-                  <span className="text-xs font-semibold text-zinc-200 truncate">{item.name}</span>
+                  <span className="text-xs font-semibold text-zinc-300 truncate">{item.name}</span>
                   <span className="text-[10px] text-zinc-500">{item.time}</span>
                 </div>
-                <p className="text-xs text-zinc-400 truncate">{item.text}</p>
+                <p className="text-xs text-zinc-300 truncate">{item.text}</p>
               </div>
             </div>
           ))}

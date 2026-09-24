@@ -83,6 +83,7 @@ export default function NewPostPage() {
           </div>
           <div>
             <button
+            aria-label="Toogle Signout"
             onClick={() => signOut({ callbackUrl: "/blog" })}
             className="mx-2 text-xs text-red-400 border border-red-500/30 hover:bg-red-500/10 px-3 py-1.5 rounded-lg transition"
           >
@@ -189,6 +190,7 @@ export default function NewPostPage() {
           </div>
 
           <button
+          aria-label="Toogle Submit for New Blog"
             type="submit"
             disabled={loading}
             className="w-full bg-amber-500 hover:bg-amber-400 text-neutral-950 font-bold py-3 rounded-lg transition disabled:opacity-50"
