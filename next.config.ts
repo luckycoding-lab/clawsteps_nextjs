@@ -13,6 +13,30 @@ const nextConfig: NextConfig = {
       },
     ],
   },
+  async redirects() {
+    return [
+      {
+        source: "/aboutus.html",
+        destination: "/aboutus",
+        permanent: true, // 301 Redirect
+      },
+      {
+        source: "/Blog/blog.html",
+        destination: "/blog",
+        permanent: true,
+      },
+      {
+        source: "/blog.html",
+        destination: "/blog",
+        permanent: true,
+      },
+      {
+        source: "/services.html",
+        destination: "/services",
+        permanent: true,
+      },
+    ];
+  },
 };
 
 export default nextConfig;
