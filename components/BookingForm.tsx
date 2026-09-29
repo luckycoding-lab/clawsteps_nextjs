@@ -53,7 +53,7 @@ export default function BookingForm() {
     <section
       id="bookingForm"
       aria-label="Dog Walking Booking Form"
-      className="max-w-3xl mx-auto px-4 sm:px-6 py-12 sm:py-16"
+      className="max-w-7xl mx-auto px-4 sm:px-6 py-12 sm:py-16"
     >
       <div className="bg-zinc-900 border border-zinc-800 rounded-3xl p-5 sm:p-10 shadow-2xl">
         <header className="mb-6 sm:mb-8">
