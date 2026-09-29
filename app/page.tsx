@@ -5,6 +5,7 @@ import PrecisionChronicles from "@/components/PrecisionChronicles";
 import BookingForm from "@/components/BookingForm";
 import MapSection from "@/components/MapSection";
 import FeaturedBlogs from "@/components/FeaturedBlogs";
+import FaqSection from "@/components/FaqSection";
 
 export default function HomePage() {
   return (
@@ -14,8 +15,9 @@ export default function HomePage() {
       <CarePackages />
       <PrecisionChronicles />
       <BookingForm />
-      <MapSection />
+      <FaqSection />
       <FeaturedBlogs />
+      <MapSection />
     </>
   );
 }

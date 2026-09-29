@@ -7,10 +7,9 @@ import { Menu, X, MessageCircle, ChevronRight } from "lucide-react";
 const NAV_ITEMS = [
   { label: "Home", href: "/" },
   { label: "Services", href: "/services" },
+  { label: "Offer", href: "/#offers" },
   { label: "Blog", href: "/blog" },
   { label: "About Us", href: "/aboutus" },
-  { label: "Privacy Policy", href: "/privacypolicy" },
-  { label: "Terms & Conditions", href: "/term-and-condition" },
 ];
 
 export default function NavbarGlass() {

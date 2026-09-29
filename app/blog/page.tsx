@@ -5,7 +5,7 @@ import { getAllPosts, calculateReadingTime } from '@/lib/blog';
 export const revalidate = 60;
 
 export const metadata = {
- title: "Pet Care & Dog Walking Blog | ClawSteps",
+  title: "Pet Care & Dog Walking Blog | ClawSteps",
   description: "Expert tips on dog health, training, and walking routines in Delhi NCR.",
   openGraph: {
     title: "ClawSteps Insights - Dog Care & Walking Tips",
@@ -51,17 +51,19 @@ export default async function BlogListingPage() {
             {posts.map((post) => {
               const readingTime = calculateReadingTime(post.content);
               return (
-                <article
+                <Link
                   key={post.$id}
-                  className="bg-neutral-900/70 border border-neutral-800 rounded-2xl overflow-hidden hover:border-amber-500/50 transition duration-300 flex flex-col group"
+                  href={`/blog/${post.slug}`}
+                  className="bg-neutral-900/70 border border-neutral-800 rounded-2xl overflow-hidden hover:border-amber-500/50 transition duration-300 flex flex-col group cursor-pointer"
                 >
+                  {/* Cover Image Container */}
                   <div className="relative h-48 w-full bg-neutral-800 overflow-hidden">
                     {post.coverImage ? (
                       <Image
                         src={post.coverImage}
                         alt={post.title}
                         fill
-                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 768px, 800px"
+                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                         className="object-cover group-hover:scale-105 transition duration-500"
                       />
                     ) : (
@@ -74,10 +76,16 @@ export default async function BlogListingPage() {
                     </span>
                   </div>
 
+                  {/* Card Body */}
                   <div className="p-6 flex-1 flex flex-col justify-between">
                     <div>
                       <div className="flex items-center text-xs text-neutral-400 space-x-2 mb-2">
-                        <span>{new Date(post.publishedAt).toLocaleDateString('en-US', { month: 'short', day: 'numeric' })}</span>
+                        <span>
+                          {new Date(post.publishedAt).toLocaleDateString('en-US', {
+                            month: 'short',
+                            day: 'numeric',
+                          })}
+                        </span>
                         <span>•</span>
                         <span>{readingTime}</span>
                       </div>
@@ -89,17 +97,17 @@ export default async function BlogListingPage() {
                       </p>
                     </div>
 
+                    {/* Card Footer Indicator */}
                     <div className="mt-6 pt-4 border-t border-neutral-800 flex items-center justify-between">
-                      <span className="text-xs text-neutral-500 font-medium">By {post.author}</span>
-                      <Link
-                        href={`/blog/${post.slug}`}
-                        className="text-amber-400 text-sm font-semibold hover:text-amber-300"
-                      >
+                      <span className="text-xs text-neutral-500 font-medium">
+                        By {post.author}
+                      </span>
+                      <span className="text-amber-400 text-sm font-semibold group-hover:translate-x-1 transition-transform inline-flex items-center">
                         Read Article →
-                      </Link>
+                      </span>
                     </div>
                   </div>
-                </article>
+                </Link>
               );
             })}
           </div>

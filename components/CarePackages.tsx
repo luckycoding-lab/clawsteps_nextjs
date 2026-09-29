@@ -2,7 +2,7 @@ import { Zap, HeartHandshake, Compass, MapPin } from "lucide-react";
 
 export default function CarePackages() {
   return (
-    <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+    <section id="offers" className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
       <div className="text-center max-w-3xl mx-auto mb-16">
         <span className="inline-block text-xs font-semibold uppercase tracking-wider text-amber-500 bg-amber-500/10 border border-amber-500/20 px-3 py-1 rounded-full mb-3">
           Premier Dog Care • Delhi NCR

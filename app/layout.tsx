@@ -1,9 +1,12 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Inter, Geist } from "next/font/google";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import AuthProvider from "@/components/AuthProvider";
 import "./globals.css";
+import { cn } from "@/lib/utils";
+
+const geist = Geist({subsets:['latin'],variable:'--font-sans'});
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -113,7 +116,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="en"  suppressHydrationWarning className={cn("font-sans", geist.variable, "scroll-smooth")}>
       <body
         suppressHydrationWarning={true}
         className={`${inter.className} min-h-screen flex flex-col bg-zinc-950 text-zinc-300`}

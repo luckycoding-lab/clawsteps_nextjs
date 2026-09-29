@@ -27,7 +27,7 @@ export default function MapSection() {
           <div className="space-y-2 text-sm text-zinc-300">
             <div className="flex items-center gap-2">
               <Mail className="w-4 h-4 text-amber-500 shrink-0" />
-              <span>contact@clawsteps.com</span>
+              <span>clawsteps@gmail.com</span>
             </div>
             <div className="flex items-center gap-2">
               <Phone className="w-4 h-4 text-amber-500 shrink-0" />
