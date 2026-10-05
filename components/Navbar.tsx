@@ -1,5 +1,6 @@
 "use client";
 
+import { useRef } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { Menu, X, MessageCircle, ChevronRight } from "lucide-react";
@@ -8,11 +9,21 @@ const NAV_ITEMS = [
   { label: "Home", href: "/" },
   { label: "Services", href: "/services" },
   { label: "Offer", href: "/#offers" },
+  { label: "FAQ", href: "/#faq" },
   { label: "Blog", href: "/blog" },
   { label: "About Us", href: "/aboutus" },
 ];
 
 export default function NavbarGlass() {
+  const detailsRef = useRef<HTMLDetailsElement | null>(null);
+
+  // Link tap hote hi mobile menu close karne ka function
+  const handleLinkClick = () => {
+    if (detailsRef.current) {
+      detailsRef.current.removeAttribute("open");
+    }
+  };
+
   return (
     <header className="sticky top-0 z-50 w-full bg-zinc-950/80 backdrop-blur-2xl border-b border-white/5">
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
@@ -73,7 +84,7 @@ export default function NavbarGlass() {
             <MessageCircle className="w-5 h-5" />
           </a>
 
-          <details className="group relative">
+          <details ref={detailsRef} className="group relative">
             <summary
               aria-label="Menu"
               className="list-none cursor-pointer p-2.5 rounded-full bg-zinc-900
@@ -94,13 +105,14 @@ export default function NavbarGlass() {
                     <li key={item.href}>
                       <Link
                         href={item.href}
+                        onClick={handleLinkClick}
                         className="flex items-center justify-between text-base font-medium
                                    text-zinc-300 hover:text-amber-400 py-3 px-3 rounded-xl
                                    hover:bg-zinc-900/50 transition-all group/link"
                       >
                         <span>{item.label}</span>
                         <ChevronRight className="w-4 h-4 text-zinc-300 group-hover/link:text-amber-400
-                                                  group-hover/link:translate-x-1 transition-all" />
+                                                 group-hover/link:translate-x-1 transition-all" />
                       </Link>
                     </li>
                   ))}
@@ -111,6 +123,7 @@ export default function NavbarGlass() {
                     href="https://wa.me/917982520153?text=Hello%20Claw%20Steps"
                     target="_blank"
                     rel="noopener noreferrer"
+                    onClick={handleLinkClick}
                     className="w-full inline-flex items-center justify-center gap-2
                                bg-emerald-600 hover:bg-emerald-500 text-white font-semibold
                                py-3.5 rounded-2xl text-sm transition-all shadow-lg
