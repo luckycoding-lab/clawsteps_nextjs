@@ -24,10 +24,10 @@ export default function Hero() {
         >
           <source src="/assets/clawstepsmainvideo.mp4" type="video/mp4" />
         </video>
-        <div className="absolute inset-0 bg-linear-to-t from-zinc-950 via-zinc-950/60 to-transparent" />
+        <div className="absolute inset-0 bg-linear-to-t from-zinc-350 via-zinc-350/60 to-transparent" />
       </div>
 
-      <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 pt-24 pb-16 text-center">
+      <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 pt-34 pb-16 text-center">
         <h1 className="text-4xl sm:text-6xl font-extrabold tracking-tight text-white leading-tight">
           Where Every Step <br />
           <span className="text-amber-500 font-serif italic">Tells a Happy Tail</span>
@@ -44,7 +44,7 @@ export default function Hero() {
             Book A Walk
           </Link>
           <Link
-            href="/about"
+            href="/aboutus"
             className="border border-zinc-800 hover:border-zinc-500 text-zinc-300 font-medium px-6 py-3 rounded-xl transition"
           >
             About Us
@@ -53,7 +53,7 @@ export default function Hero() {
       </div>
 
       {/* Infinite Horizontal Marquee */}
-      <div className="relative z-10 py-6 border-t border-zinc-800/60 overflow-hidden">
+      <div className="relative z-10 py-6 border-zinc-800/60 overflow-hidden">
         <div className="flex gap-4 animate-marquee whitespace-nowrap">
           {REVIEWS.concat(REVIEWS).map((item, idx) => (
             <div
