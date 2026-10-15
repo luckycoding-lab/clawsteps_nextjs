@@ -1,12 +1,15 @@
 import type { Metadata } from "next";
 import { Inter, Geist } from "next/font/google";
-import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
+import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 import AuthProvider from "@/components/AuthProvider";
 import "./globals.css";
 import { cn } from "@/lib/utils";
 
-const geist = Geist({subsets:['latin'],variable:'--font-sans'});
+const geist = Geist({
+  subsets: ["latin"],
+  variable: "--font-sans",
+});
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -15,10 +18,13 @@ export const viewport = {
   initialScale: 1,
   maximumScale: 1,
 };
+
 export const metadata: Metadata = {
+  metadataBase: new URL("https://clawsteps.com"),
   title: "Best Dog Walkers in Delhi & Noida | ClawSteps - Book Now",
   icons: {
     icon: "/assets/Logo.png",
+    apple: "/assets/Logo.png",
   },
   description:
     "ClawSteps provides trusted, professional dog walking in Delhi, Noida & Gurgaon. 20, 30 & 40-min safe, fun walks for your furry friends. Book your walker today!",
@@ -28,6 +34,7 @@ export const metadata: Metadata = {
     "pet care Gurgaon",
     "dog walking near me",
     "professional pet sitters",
+    "cage free dog boarding Delhi",
     "ClawSteps",
   ],
   alternates: {
@@ -52,63 +59,80 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "ClawSteps Dog Walking Delhi NCR",
     description: "Professional dog walking tailored to your pet's needs.",
+    images: ["https://clawsteps.com/assets/clawstepWebsite.png"],
   },
 };
 
-const jsonLd = {
-  "@context": "https://schema.org",
-  "@type": ["LocalBusiness", "PetService"],
-  "@id": "https://clawsteps.com/#business",
-  name: "ClawSteps",
-  alternateName: "ClawSteps Dog Walking",
-  description: "Professional dog walking and pet care services in Delhi NCR. Certified handlers, GPS tracking, and daily updates.",
-  url: "https://clawsteps.com",
-  logo: "https://clawsteps.com/assets/Logo.png",
-  image: "https://clawsteps.com/assets/Logo.png",
-  telephone: "+91 7982520153",
-  priceRange: "₹₹",
-  currenciesAccepted: "INR",
-  paymentAccepted: "Cash, UPI, Credit Card",
-  address: {
-    "@type": "PostalAddress",
-    streetAddress: "Dwarka Mor",
-    addressLocality: "New Delhi",
-    addressRegion: "Delhi NCR",
-    postalCode: "110059",
-    addressCountry: "IN",
-  },
-  geo: {
-    "@type": "GeoCoordinates",
-    latitude: 28.6186, // Dwarka Mor coordinates
-    longitude: 77.0322,
-  },
-  areaServed: [
-    { "@type": "City", name: "Delhi" },
-    { "@type": "City", name: "Noida" },
-    { "@type": "City", name: "Gurgaon" },
-  ],
-  openingHoursSpecification: [
-    {
-      "@type": "OpeningHoursSpecification",
-      dayOfWeek: [
-        "Monday",
-        "Tuesday",
-        "Wednesday",
-        "Thursday",
-        "Friday",
-        "Saturday",
-        "Sunday",
-      ],
-      opens: "06:00",
-      closes: "21:00",
+// Rich Structured Data (Local Business + Sitelinks Search Schema)
+const structuredData = [
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "@id": "https://clawsteps.com/#website",
+    name: "ClawSteps",
+    url: "https://clawsteps.com/",
+    potentialAction: {
+      "@type": "SearchAction",
+      target: "https://clawsteps.com/blog?q={search_term_string}",
+      "query-input": "required name=search_term_string",
     },
-  ],
-  sameAs: [
-    "https://www.instagram.com/clawsteps/",
-    "https://www.facebook.com/profile.php?id=61581390965748",
-    "https://x.com/clawsteps",
-  ],
-};
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": ["LocalBusiness", "PetService"],
+    "@id": "https://clawsteps.com/#business",
+    name: "ClawSteps",
+    alternateName: "ClawSteps Dog Walking & Pet Care",
+    description:
+      "Professional dog walking and cage-free pet care services across Delhi NCR. Verified handlers, GPS tracking, and daily hydration logs.",
+    url: "https://clawsteps.com",
+    logo: "https://clawsteps.com/assets/Logo.png",
+    image: "https://clawsteps.com/assets/clawstepWebsite.png",
+    telephone: "+91 7982520153",
+    priceRange: "₹₹",
+    currenciesAccepted: "INR",
+    paymentAccepted: "Cash, UPI, Credit Card",
+    address: {
+      "@type": "PostalAddress",
+      streetAddress: "Dwarka Mor",
+      addressLocality: "New Delhi",
+      addressRegion: "Delhi NCR",
+      postalCode: "110059",
+      addressCountry: "IN",
+    },
+    geo: {
+      "@type": "GeoCoordinates",
+      latitude: 28.6186,
+      longitude: 77.0322,
+    },
+    areaServed: [
+      { "@type": "City", name: "Delhi" },
+      { "@type": "City", name: "Noida" },
+      { "@type": "City", name: "Gurgaon" },
+    ],
+    openingHoursSpecification: [
+      {
+        "@type": "OpeningHoursSpecification",
+        dayOfWeek: [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday",
+          "Sunday",
+        ],
+        opens: "06:00",
+        closes: "21:00",
+      },
+    ],
+    sameAs: [
+      "https://www.instagram.com/clawsteps/",
+      "https://www.facebook.com/profile.php?id=61581390965748",
+      "https://x.com/clawsteps",
+    ],
+  },
+];
 
 export default function RootLayout({
   children,
@@ -116,15 +140,19 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en"  suppressHydrationWarning className={cn("font-sans", geist.variable, "scroll-smooth")}>
+    <html
+      lang="en"
+      suppressHydrationWarning
+      className={cn("scroll-smooth", geist.variable)}
+    >
       <body
-        suppressHydrationWarning={true}
-        className={`${inter.className} min-h-screen flex flex-col bg-zinc-950 text-zinc-300`}
+        suppressHydrationWarning
+        className={`${inter.className} min-h-screen flex flex-col bg-zinc-950 text-zinc-300 antialiased selection:bg-amber-500 selection:text-black`}
       >
-        {/* SEO Structured Data */}
+        {/* SEO & Sitelinks Structured Data */}
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
         />
 
         <AuthProvider>
