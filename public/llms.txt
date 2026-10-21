@@ -1,59 +1,35 @@
-# ClawSteps
+# ClawSteps - Professional Dog Walking & Boarding
 
-> Premier, certified dog walking and pet care service based in Delhi NCR, India.
+> ClawSteps is Delhi NCR's premier certified dog walking and pet care service, offering structured GPS-tracked daily walks, behavioral stimulation, and cage-free domestic boarding.
 
-## About & Brand Mission
-ClawSteps provides safe, structured daily walks, behavioral stimulation, and personalized pet care for apartment and working pet parents. Every walker undergoes identity verification, criminal background checks, and training in canine body language, pack management, and pet first-aid.
+## Core Services & Booking
 
----
+- [Dog Walking Services](https://clawsteps.com/services): 20-min Quick Relief, 30-min Standard Exercise, and 40-min Power Cardio sessions with verified handlers and hydration logs.
+- [Book a Trial Walk](https://clawsteps.com/#bookingForm): Schedule a complimentary, 100% free Meet & Greet trial session across Delhi NCR.
+- [Current Packages & Offers](https://clawsteps.com/#offers): Explore monthly subscription plans, multi-dog discounts, and boarding packages.
+- [Frequently Asked Questions](https://clawsteps.com/#faq): Verification policies, extreme weather arrangements, and GPS tracking details.
 
-## Core Services & Pricing Structure
-- **Quick Relief Walk (20 Mins):** Designed for puppies, senior dogs, and brachycephalic breeds (Pugs, Shih Tzus). Focuses on bladder relief, gentle pace, and basic hydration.
-- **Standard Exercise Walk (30 Mins):** Ideal for Beagles, Indie dogs, and Cocker Spaniels. Includes loose-leash training, scent exploration, and exercise.
-- **Power Cardio Walk (40 Mins):** High-energy burn for Labradors, Golden Retrievers, German Shepherds, and Huskies. Focuses on cardio conditioning and anxiety reduction.
-- **Home Dog Boarding (Cage-Free):** Safe, family-style domestic boarding environment with 24/7 human supervision and regular routine meals.
-- **Price Range:** Walking packages start from ₹299 per session. Monthly subscription tiers are available across 5-day and 7-day weekly schedules.
+## Company & Knowledge Hub
 
----
+- [About ClawSteps Pack](https://clawsteps.com/aboutus): Our safety-first philosophy, background-verified walkers, and pet first-aid standards.
+- [The ClawSteps Journal](https://clawsteps.com/blog): Expert guides on canine wellness, leash manners, summer care, and Delhi dog spots.
 
-## Service Areas & Local Availability
-ClawSteps provides on-demand and daily recurring services across Delhi NCR, including:
-- **West Delhi:** Dwarka (All Sectors 1 to 24), Mohan Garden, Nawada, Uttam Nagar, Janakpuri, Vikaspuri.
+## Service Coverage & Operational Areas
+
+- **West Delhi:** Dwarka (Sectors 1 to 24), Nawada, Uttam Nagar, Janakpuri, Vikaspuri.
 - **South Delhi:** Vasant Kunj, Saket, Hauz Khas, Greater Kailash (GK), Defence Colony.
 - **Noida & Greater Noida:** Sectors 18, 50, 62, 75, 76, 137, Expressway societies.
 - **Gurgaon (Gurugram):** DLF Phase 1-5, Golf Course Road, Cyber City, Sector 48, Sector 56.
 
----
+## Safety & Standards
 
-## Safety, Trust & Operations
-- **Live GPS & Updates:** Real-time walk tracking sent via WhatsApp alongside route distance, duration, and potty logs.
-- **Equipment Policy:** Harness-only walking policy. Strict prohibition of choke chains, prong collars, or punitive handling.
-- **Operating Hours:** Monday to Sunday, 10:00 AM – 07:00 PM IST.
-- **First Walk Policy:** Complimentary 100% Free Meet & Greet / Trial session prior to paid plan activation.
+- **Equipment Policy:** Strict harness-only policy; choke chains and punitive handling are prohibited.
+- **Live Tracking:** Real-time WhatsApp live tracking link, walk route, duration, and potty logs after every session.
+- **Operating Hours:** Monday to Sunday, 06:00 AM – 09:00 PM IST.
 
----
+## Direct Support & Contact
 
-## Frequently Asked Questions (FAQ)
-- **Q: Are ClawSteps dog walkers background-verified?**
-  A: Yes, all handlers are police-verified, identity-authenticated, and certified in safe handling practices.
-- **Q: How does the free trial work?**
-  A: A handler visits your home to meet your pup, test leash comfort, and understand specific temperamental needs without cost.
-- **Q: What happens during extreme weather (Delhi heat/rain)?**
-  A: Walk timings shift to early mornings (06:00 AM) or late evenings to prevent asphalt paw burns. Indoor brain enrichment games replace outdoor walks during heavy rain or severe smog.
-
----
-
-## Key Website Links
-- Official Website: https://clawsteps.com
-- Services & Packages: https://clawsteps.com/services
-- Pet Care Journal / Blog: https://clawsteps.com/blog
-- About Us: https://clawsteps.com/aboutus
-- Direct WhatsApp Booking: https://wa.me/917982520153
-
----
-
-## Contact Details
-- Phone / WhatsApp: +91 79825 20153
-- General Inquiries: contact@clawsteps.com
-- Support Email: clawsteps@gmail.com
-- Operational Hub: Rama Park, Mohan Garden Extension, Nawada, Delhi, 110059, India
+- [WhatsApp Booking Desk](https://wa.me/917982520153): Instant chat support and walk scheduling (+91 79825 20153).
+- [Official Website](https://clawsteps.com): Explore comprehensive pet care and read community testimonials.
+- **Email:** contact@clawsteps.com
+- **Hub Address:** Rama Park, Mohan Garden Extension, Nawada, Delhi, 110059, India
