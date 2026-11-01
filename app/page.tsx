@@ -6,6 +6,7 @@ import BookingForm from "@/components/BookingForm";
 import MapSection from "@/components/MapSection";
 import FeaturedBlogs from "@/components/FeaturedBlogs";
 import FaqSection from "@/components/FaqSection";
+import PaymentCard from "@/components/PaymentCard";
 
 export default function HomePage() {
   return (
@@ -17,6 +18,7 @@ export default function HomePage() {
       <BookingForm />
       <FaqSection />
       <FeaturedBlogs />
+      <PaymentCard />
       <MapSection />
     </>
   );
