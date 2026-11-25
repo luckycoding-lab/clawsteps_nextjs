@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import { getAllPosts, calculateReadingTime } from '@/lib/blog';
+import ComingSoonPage from '../comingsoon/page';
 
 export const revalidate = 60;
 
@@ -41,10 +42,11 @@ export default async function BlogListingPage() {
 
         {posts.length === 0 ? (
           <div className="text-center py-20 border border-neutral-800 rounded-2xl bg-neutral-900/40">
-            <p className="text-neutral-400 text-lg">No blog posts found yet.</p>
-            <span className="text-xs text-neutral-500 mt-1 block">
+            {/* <p className="text-neutral-400 text-lg">No blog posts found yet.</p> */}
+            {/* <span className="text-xs text-neutral-500 mt-1 block">
               Appwrite dashboard se first post publish karein!
-            </span>
+            </span> */}
+            <ComingSoonPage />
           </div>
         ) : (
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
